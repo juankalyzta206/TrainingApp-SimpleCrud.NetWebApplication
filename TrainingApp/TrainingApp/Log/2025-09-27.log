@@ -1,0 +1,13 @@
+2025-09-27 16:53:38 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:54  - col:21 - Could not find stored procedure 'sp_Divisi_Insert'.
+2025-09-27 16:55:27 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:56  - col:17 - Thread was being aborted.
+2025-09-27 16:55:35 : Divisi,D:\Work\.Net\TrainingApp\TrainingApp\Divisi.aspx.cs - btnDelete_Click - line:37  - col:17 - Thread was being aborted.
+2025-09-27 16:55:40 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:56  - col:17 - Thread was being aborted.
+2025-09-27 16:55:48 : Divisi,D:\Work\.Net\TrainingApp\TrainingApp\Divisi.aspx.cs - btnDelete_Click - line:37  - col:17 - Thread was being aborted.
+2025-09-27 16:55:50 : Divisi,D:\Work\.Net\TrainingApp\TrainingApp\Divisi.aspx.cs - btnDelete_Click - line:35  - col:17 - The DELETE statement conflicted with the REFERENCE constraint "FK_user_divisi". The conflict occurred in database "training", table "dbo.user", column 'divisi_id'.
+The statement has been terminated.
+2025-09-27 17:28:52 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:56  - col:17 - Thread was being aborted.
+2025-09-27 17:29:17 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:56  - col:17 - Thread was being aborted.
+2025-09-27 17:35:19 : DivisiInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\DivisiInput.aspx.cs - btnSave_Click - line:56  - col:17 - Thread was being aborted.
+2025-09-27 20:06:04 : User,D:\Work\.Net\TrainingApp\TrainingApp\Repository\UserRepository.cs - GetUserPaged - line:60  - col:29 - Could not find stored procedure 'sp_User_GetPaged'.
+2025-09-27 20:06:04 : User,D:\Work\.Net\TrainingApp\TrainingApp\Repository\UserRepository.cs - GetUserPaged - line:60  - col:29 - Could not find stored procedure 'sp_User_GetPaged'.
+2025-09-27 20:07:53 : UserInput,D:\Work\.Net\TrainingApp\TrainingApp\Forms\UserInput.aspx.cs - btnSave_Click - line:68  - col:17 - Thread was being aborted.

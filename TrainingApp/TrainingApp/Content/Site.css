@@ -1,0 +1,154 @@
+﻿/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+
+/* ================================================ */
+/* Custom Layout, Background, and Sidebar Styles    */
+/* ================================================ */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.page-wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    height: 100vh; /* Make sidebar full height */
+    position: fixed; /* Keep it in place while scrolling */
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 1000;
+    background-color: #2c3e50 !important; /* Warna Midnight Blue */
+}
+
+    .sidebar .navbar-brand {
+        margin-bottom: 1rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+.content-wrapper {
+    margin-left: 250px; /* Must be the same as the sidebar's width */
+    width: 100%;
+}
+
+/* Custom styles for TreeView Menu */
+.sidebar .tree-view-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #adb5bd;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    font-size: 0.95rem;
+}
+
+    .sidebar .tree-view-menu a:hover {
+        background-color: #495057;
+        color: #ffffff;
+        border-left: 3px solid #0d6efd;
+    }
+
+.sidebar .tree-view-menu table {
+    border: none;
+}
+
+    .sidebar .tree-view-menu table table {
+        margin-left: 15px;
+    }
+
+
+/* ================================================ */
+/* Custom GridView Pager Styles (VERSI PERBAIKAN)   */
+/* ================================================ */
+
+/* Target baris <tr> yang memiliki class .pagination-bs dan sel <td> di dalamnya */
+tr.pagination-bs > td {
+    border: 0 !important; /* Hapus border bawaan */
+    padding: 12px 0 !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Target tabel di dalam sel pager */
+tr.pagination-bs table {
+    margin: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+}
+
+/* Gaya untuk semua link (1, 2, ...) dan span (halaman aktif) */
+tr.pagination-bs a,
+tr.pagination-bs span {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    margin-left: 2px;
+    line-height: 1.5;
+    color: #0d6efd;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+    /* Gaya saat mouse di atas link nomor halaman */
+    tr.pagination-bs a:hover {
+        z-index: 2;
+        color: #0a58ca;
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+    }
+
+/* Gaya untuk nomor halaman yang sedang aktif */
+tr.pagination-bs span {
+    z-index: 3;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    cursor: default;
+}
+
+/* ================================================ */
+/* Responsive Styles for Smaller Screens            */
+/* ================================================ */
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column; /* Stack sidebar on top of content */
+    }
+
+    .sidebar {
+        position: relative; /* Change from fixed positioning */
+        width: 100%;
+        height: auto; /* Let height be determined by content */
+        margin-bottom: 1rem;
+    }
+
+    .content-wrapper {
+        margin-left: 0; /* Remove the margin */
+    }
+}
