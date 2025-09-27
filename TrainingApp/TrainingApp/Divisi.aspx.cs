@@ -13,13 +13,11 @@ namespace TrainingApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Binding data dipindahkan ke Page_PreRender
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            // Kita hanya bind saat halaman pertama kali dibuka di sini
-            // Postback (search, ganti halaman) akan di-handle oleh event-nya masing-masing
+           
             if (!IsPostBack)
             {
                 BindGrid();

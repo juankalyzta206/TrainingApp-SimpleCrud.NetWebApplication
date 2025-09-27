@@ -12,7 +12,6 @@ namespace TrainingApp.Repository
         public DataTable GetAllUsers()
         {
             DataTable dt = new DataTable();
-            // Query diperbarui dengan JOIN untuk mendapatkan nama divisi
             string query = @"
                 SELECT u.id, u.nama, u.gender, d.nama as divisi_nama, u.note, u.tanggal 
                 FROM [user] u
@@ -31,7 +30,6 @@ namespace TrainingApp.Repository
             return dt;
         }
 
-        // *** METHOD BARU UNTUK PAGING DAN SEARCH ***
         public DataTable GetUserPaged(string searchTerm, int pageNumber, int pageSize, out int totalRows)
         {
             DataTable dt = new DataTable();

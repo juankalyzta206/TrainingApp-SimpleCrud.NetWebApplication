@@ -40,7 +40,7 @@
                             <%# Convert.ToBoolean(Eval("gender")) ? "Male" : "Female" %>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="divisi_nama" HeaderText="Divisi" /> <%-- Diubah dari divisi_id --%>
+                    <asp:BoundField DataField="divisi_nama" HeaderText="Divisi" /> 
                     <asp:BoundField DataField="note" HeaderText="Note" />
                     <asp:BoundField DataField="tanggal" HeaderText="Tanggal" DataFormatString="{0:dd-MM-yyyy}" />
                     <asp:TemplateField HeaderText="Actions">

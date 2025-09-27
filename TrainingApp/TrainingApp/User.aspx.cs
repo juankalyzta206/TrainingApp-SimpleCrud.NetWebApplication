@@ -13,7 +13,6 @@ namespace TrainingApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Logika binding dipindahkan ke PreRender
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
